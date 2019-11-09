@@ -8,6 +8,7 @@ import { OutputTestComponent } from './components/interaction/output-test/output
 import { PipeTestPipe } from './pipes/pipe-test.pipe';
 import { PipeTestComponentComponent } from './components/pipe-test-component/pipe-test-component.component';
 import { Routes, RouterModule } from '@angular/router';
+import { EffectsDirective } from './directives/effects.directive';
 
 const routes: Routes = [
   {
@@ -27,7 +28,8 @@ const routes: Routes = [
     InputTestComponent,
     OutputTestComponent,
     PipeTestPipe,
-    PipeTestComponentComponent
+    PipeTestComponentComponent,
+    EffectsDirective
   ],
   imports: [
     BrowserModule,

@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { InputTestComponent } from './input-test.component';
 import { OutputTestComponent } from '../output-test/output-test.component';
+import { EffectsDirective } from 'src/app/directives/effects.directive';
 
 describe('InputTestComponent', () => {
   let component: InputTestComponent;
@@ -9,7 +10,7 @@ describe('InputTestComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [InputTestComponent, OutputTestComponent]
+      declarations: [InputTestComponent, OutputTestComponent, EffectsDirective]
     })
       .compileComponents();
   }));

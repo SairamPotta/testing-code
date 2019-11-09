@@ -10,14 +10,13 @@ import { HttpErrorResponse } from '@angular/common/http';
 export class ServiceTestComponent implements OnInit {
   todosInfo: any[];
   error: string;
-  constructor(private _service: SharedService) {}
+  constructor(private _service: SharedService) { }
 
   ngOnInit() {
     this._service.getTodos().subscribe((response: any[]) => {
       this.todosInfo = response;
     }, (error) => {
-      console.log(error);
-      this.error =  error;
+      this.error = error;
     });
   }
 }

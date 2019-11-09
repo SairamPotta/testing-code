@@ -9,9 +9,9 @@ describe('InputTestComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ InputTestComponent, OutputTestComponent ]
+      declarations: [InputTestComponent, OutputTestComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

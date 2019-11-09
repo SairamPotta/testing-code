@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SharedService } from '../shared.service';
-import { HttpErrorResponse } from '@angular/common/http';
+import { SharedService } from '../../services/shared.service';
 
 @Component({
   selector: 'app-service-test',

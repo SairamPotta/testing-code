@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ServiceTestComponent } from './service-test.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { SharedService } from '../shared.service';
+import { SharedService } from '../../services/shared.service';
 import { of, throwError } from 'rxjs';
 
 describe('ServiceTestComponent', () => {
@@ -12,10 +12,10 @@ describe('ServiceTestComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ServiceTestComponent ],
+      declarations: [ServiceTestComponent],
       imports: [HttpClientTestingModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -24,7 +24,7 @@ describe('ServiceTestComponent', () => {
     service = fixture.debugElement.injector.get(SharedService);
     fixture.detectChanges();
   });
-  
+
   it('should create', () => {
     expect(component).toBeTruthy();
   });
@@ -48,7 +48,7 @@ describe('ServiceTestComponent', () => {
     expect(component.todosInfo).toBe(dummyPosts);
   });
 
-  it('should get error while todos information by subscribing', async () => {  
+  it('should get error while todos information by subscribing', async () => {
     spyOn(service, 'getTodos').and.returnValue(throwError('error finding'));
     component.ngOnInit();
     fixture.detectChanges();

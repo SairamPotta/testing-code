@@ -2,11 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ServiceTestComponent } from './service-test/service-test.component';
-import { InputTestComponent } from './interaction/input-test/input-test.component';
-import { OutputTestComponent } from './interaction/output-test/output-test.component';
-import { PipeTestPipe } from './pipe-test.pipe';
-import { PipeTestComponentComponent } from './pipe-test-component/pipe-test-component.component';
+import { ServiceTestComponent } from './components/service-test/service-test.component';
+import { InputTestComponent } from './components/interaction/input-test/input-test.component';
+import { OutputTestComponent } from './components/interaction/output-test/output-test.component';
+import { PipeTestPipe } from './pipes/pipe-test.pipe';
+import { PipeTestComponentComponent } from './components/pipe-test-component/pipe-test-component.component';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [

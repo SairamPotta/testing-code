@@ -10,6 +10,6 @@ export class SharedService {
   constructor(private _http: HttpClient) { }
 
   getTodos() {
-    return this._http.get(this.endPoint + '1');
+    return this._http.get(this.endPoint + '/1');
   }
 }

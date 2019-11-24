@@ -4,7 +4,7 @@ import { HttpClientTestingModule, HttpTestingController } from '@angular/common/
 import { SharedService } from './shared.service';
 
 describe('SharedService', () => {
-  let service: SharedService, 
+  let service: SharedService,
     httpMock: HttpTestingController;
 
   beforeEach(() => {
@@ -37,7 +37,7 @@ describe('SharedService', () => {
       expect(res.length).toBe(2);
       expect(res).toBe(dummyPosts);
     });
-    const request = httpMock.expectOne(service.endPoint+ '1');
+    const request = httpMock.expectOne(service.endPoint + '/1');
 
     expect(request.request.method).toBe('GET');
     request.flush(dummyPosts);

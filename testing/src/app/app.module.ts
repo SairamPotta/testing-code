@@ -9,14 +9,15 @@ import { PipeTestPipe } from './pipes/pipe-test.pipe';
 import { PipeTestComponentComponent } from './components/pipe-test-component/pipe-test-component.component';
 import { Routes, RouterModule } from '@angular/router';
 import { EffectsDirective } from './directives/effects.directive';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'service',
     component: ServiceTestComponent
   },
   {
-    path: 'input',
+    path: '',
     component: InputTestComponent
   }
 ]
@@ -33,6 +34,7 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

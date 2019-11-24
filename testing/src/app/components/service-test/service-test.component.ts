@@ -10,6 +10,8 @@ export class ServiceTestComponent implements OnInit {
   todosInfo: any[];
   error: string;
   constructor(private _service: SharedService) { }
+  data = ['a', 'b', 'c', 'd'];
+  sampledata = 'hello world';
 
   ngOnInit() {
     this._service.getTodos().subscribe((response: any[]) => {
